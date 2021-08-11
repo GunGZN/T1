@@ -347,7 +347,7 @@ service ssh restart
 
 ok "❯❯❯ กำลังติดตั้งเมนู " 
 cd
-wget -q -O menu "$kguza/menu/menu"
+wget -q -O menu "https://raw.githubusercontent.com/GunGZN/T1/main/menu"
 chmod +x menu
 ./menu
 rm -f menu
