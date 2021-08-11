@@ -27,10 +27,6 @@ echo "screenfetch" >> .bashrc
 #<BODY text='ffffff'>
 kguza="https://kguza.net/scrip/u-d/openvpn"
 
-#OS
-if [[ -e /etc/debian_version ]]; then
-VERSION_ID=$(cat /etc/os-release | grep "VERSION_ID")
-fi
 
 
 # Sanity check
@@ -241,7 +237,7 @@ ok "❯❯❯ service nginx restart"
 service nginx restart > /dev/null 2>&1
 
 #install php-fpm
-if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
+if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
 #debian8
 die "❯❯❯ apt-get install php"
 apt-get install -qy php5-fpm > /dev/null 2>&1
@@ -371,7 +367,7 @@ mv /etc/openvpn/KGUZA.ovpn /home/vps/public_html/KGUZA.ovpn
 mv /etc/openvpn/KGUZAZA.ovpn /home/vps/public_html/KGUZAZA.ovpn
 rm /home/vps/public_html/KGUZAZA.ovpn
 
-if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
+if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
 echo " "
 echo " ┈╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮"
 echo " ┈┣ webmin $webmin "
