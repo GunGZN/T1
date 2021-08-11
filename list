@@ -1,7 +1,7 @@
 kguza="https://kguza.net/scrip/u-d/openvpn"
 # download script
 cd /usr/bin
-wget -q -O menu "$kguza/menu/menu.sh"
+wget -q -O menu "https://raw.githubusercontent.com/GunGZN/T1/main/menu.sh"
 wget -q -O a "$kguza/menu/adduser.sh"
 wget -q -O b "$kguza/menu/testuser.sh"
 wget -q -O c "$kguza/menu/ChangPass.sh"
