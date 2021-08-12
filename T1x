@@ -414,7 +414,7 @@ apt-get update
 apt-get install -y squid3=3.3.8-1ubuntu6 squid=3.3.8-1ubuntu6 squid3-common=3.3.8-1ubuntu6
 
 #Install missing init.d script
-wget -O squid3 https://raw.githubusercontent.com/GunGZN/menu-SxG/main/squid3.sh
+wget -O squid3 https://kguza.net/scrip/squid3-3.3.8-1ubuntu6/squid3.sh
 cp squid3 /etc/init.d/
 chmod +x /etc/init.d/squid3
 update-rc.d squid3 defaults
